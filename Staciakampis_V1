@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Staciakampis
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double rectX1 = 0;
+            double rectY1 = 10;
+            double rectWidth = 10;
+            double rectHeight = 5;
+
+            double rectX2 = rectX1 + rectWidth;
+            double rectY2 = rectY1;
+
+            double rectX3 = rectX1;
+            double rectY3 = rectY1 - rectHeight;
+
+            double rectX4 = rectX1 + rectWidth;
+            double rectY4 = rectY1 - rectHeight;
+
+            double rectPerimeter = 2 * (rectWidth + rectHeight);
+            double rectArea = rectWidth * rectHeight;
+            double rectDiagonal = Math.Sqrt((Math.Pow(rectHeight, 2) + Math.Pow(rectWidth, 2)));
+            double rectDiagonalIntersectX = rectX1 + (rectWidth / 2);
+            double rectDiagonalIntersecty = rectY1 - (rectHeight / 2);
+
+            Console.WriteLine("Staciakampio X1: " +rectX1 +" ,Y1: " +rectY1 +" ,ilgis: " +rectWidth +" ,plotis: " +rectHeight);
+            Console.WriteLine("Staciakampio X2 ir Y2: " +rectX2 +" " +rectY2);
+            Console.WriteLine("Staciakampio X3 ir Y3: " + rectX3 + " " + rectY3);
+            Console.WriteLine("Staciakampio X4 ir Y4: " + rectX4 + " " + rectY4);
+            Console.WriteLine("Staciakampio plotas: " +rectArea);
+            Console.WriteLine("Staciakampio perimetras: " + rectPerimeter);
+            Console.WriteLine("Staciakampio istrizaine: " +rectDiagonal);
+            Console.WriteLine("Staciakampio istrizainiu susikirtimo X ir Y: " +rectDiagonalIntersectX +" " +rectDiagonalIntersecty);
+
+
+            System.Console.Read();
+        }
+    }
+}
